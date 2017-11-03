@@ -122,7 +122,7 @@ PRODUCT_PACKAGES += \
     AudioFX \
     CMSettingsProvider \
     LineageSetupWizard \
-    Eleven \
+    Phonograph \
     ExactCalculator \
     Jelly \
     LockClock \
