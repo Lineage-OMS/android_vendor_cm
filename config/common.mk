@@ -123,7 +123,7 @@ PRODUCT_PACKAGES += \
     Jelly \
     LockClock \
     ThemeInterfacer \
-    Trebuchet \
+    Lawnchair \
     WallpaperPicker \
     WeatherProvider
 
