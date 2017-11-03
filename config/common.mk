@@ -77,6 +77,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
 
+# Copy Magisk zip
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/zip/magisk.zip:system/addon.d/magisk.zip
+
 # Include CM audio files
 include vendor/cm/config/cm_audio.mk
 
@@ -213,12 +217,6 @@ ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_PACKAGES += \
     procmem \
     procrank
-
-# Conditionally build in su
-ifeq ($(WITH_SU),true)
-PRODUCT_PACKAGES += \
-    su
-endif
 endif
 
 DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
